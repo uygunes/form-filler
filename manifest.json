@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "form-filler",
+	"version": "1.0",
+	"description": "special form filler just for personal use",
+	"icons": {
+		"128": "128.png",
+		"48": "48.png",
+		"16": "16.png"
+	},
+	"page_action": {
+		"default_icon": "16.png",
+		"default_popup": "form.html"
+	},
+	"background": {
+		"scripts": ["eventPage.js"],
+		"persisten": false
+	},
+
+	"content_scripts": [
+		{
+			"all_frames": true,
+       		"js": [ "content.js", "jquery-3.2.0.min.js" ],
+        	"matches": [ "http://*/*", "https://*/*" ] 
+		}
+	],
+
+	 "permissions": [ "storage","tabs", "http://*/*" ]
+}
