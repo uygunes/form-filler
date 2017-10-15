@@ -12,13 +12,21 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
 		var u2  = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_usb]")[0];
 		var u3  = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_usb3]")[0];
 		var u31 = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_usb3_1]")[0];
+		var thunderbolt = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_thunderbolt]")[0];
 		var vga = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_vga]")[0];
 		var dvi = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_dvi]")[0];
 		var hdmi = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_hdmi]")[0];
 		var dport = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_displayport]")[0];
 		var bluetooth = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_bluetooth]")[0];
+		var nfc = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_nfc]")[0];
+		var cardreader = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_cardreader]")[0];
+		
 		var primary = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][primary_cam_mpix]")[0];
 		var secondary = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][secondary_cam_mpix]")[0];
+		var lte = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_lte]")[0];
+		var dualsim = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_dual_sim]")[0];
+		var gps = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_gps]")[0];
+		var sensors = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][sensors]")[0];
 		var batteryW = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][battery_capacity]")[0];
 		var batteryH = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][battery_capacity_mah]")[0];
 		var width = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][size_width]")[0];
@@ -26,18 +34,26 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
 		var depth = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][size_depth]")[0];
 		var weight = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][weight_nb]")[0];
 		var warranty = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][warranty]")[0];
+		var ean = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][ean]")[0];
 		
 		hdd.value = request.hddInfo;
 		u2.value = request.u2;
 		u3.value = request.u3;
 		u31.value = request.u31;
+		thunderbolt = request.thunderbolt;
 		vga.value = request.vga;
 		dvi.value = request.dvi;
 		hdmi.value = request.hdmi;
 		dport.value = request.dport;
 		bluetooth.value = request.bluetooth;
+		nfc.checked = request.nfc.checked;
+		cardreader.value = request.cardreader;
 		primary.value = request.primary;
 		secondary.value = request.secondary;
+		lte.checked = request.lte.checked;
+		dualsim.checked = request.dualsim.checked;
+		gps.checked = request.gps.checked;
+		sensors.value = request.sensors;
 		batteryW.value = request.batteryW;
 		batteryH.value = request.batteryH;
 		width.value = request.width;
@@ -45,6 +61,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
 		depth.value = request.depth;
 		weight.value = request.weight;
 		warranty.value = request.warranty;
+		ean.value = request.ean;
 
 		
 	}
