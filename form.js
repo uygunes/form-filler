@@ -24,20 +24,27 @@ $(function(){
 			 u2:fields.u2,
 			 u3:fields.u3,
 			 u31:fields.u31,
+			 thunderbolt:fields.thunderbolt,
 			 vga:fields.vga,
 			 dvi:fields.dvi,
 			 hdmi:fields.hdmi,
 			 dport:fields.dport,
 			 bluetooth:fields.bluetooth,
+			 nfc:fields.nfc,
 			 primary:fields.primary,
 			 secondary:fields.secondary,
+			 lte:fields.lte,
+			 dualsim:fields.dualsim,
+			 gps:fields.gps,
+			 sensors:fields.sensors,
 			 batteryW:fields.batteryW,
 			 batteryH:fields.batteryH,
 			 width:fields.width,
 			 length:fields.length,
 			 depth:fields.depth,
 			 weight:fields.weight,
-			 warranty:fields.warranty});
+			 warranty:fields.warranty,
+			 ean:fields.ean});
 		})
 })
 
