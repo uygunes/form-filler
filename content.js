@@ -18,14 +18,9 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
 		var hdmi = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_hdmi]")[0];
 		var dport = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_displayport]")[0];
 		var bluetooth = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_bluetooth]")[0];
-		var nfc = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_nfc]")[0];
 		var cardreader = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_cardreader]")[0];
-		
 		var primary = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][primary_cam_mpix]")[0];
 		var secondary = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][secondary_cam_mpix]")[0];
-		var lte = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_lte]")[0];
-		var dualsim = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_dual_sim]")[0];
-		var gps = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_gps]")[0];
 		var sensors = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][sensors]")[0];
 		var batteryW = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][battery_capacity]")[0];
 		var batteryH = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][battery_capacity_mah]")[0];
@@ -46,13 +41,9 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
 		hdmi.value = request.hdmi;
 		dport.value = request.dport;
 		bluetooth.value = request.bluetooth;
-		nfc.checked = request.nfc.checked;
 		cardreader.value = request.cardreader;
 		primary.value = request.primary;
 		secondary.value = request.secondary;
-		lte.checked = request.lte.checked;
-		dualsim.checked = request.dualsim.checked;
-		gps.checked = request.gps.checked;
 		sensors.value = request.sensors;
 		batteryW.value = request.batteryW;
 		batteryH.value = request.batteryH;
