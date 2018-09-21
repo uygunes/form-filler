@@ -35,7 +35,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
 		u2.value = request.u2;
 		u3.value = request.u3;
 		u31.value = request.u31;
-		thunderbolt = request.thunderbolt;
+		thunderbolt.value = request.thunderbolt;
 		vga.value = request.vga;
 		dvi.value = request.dvi;
 		hdmi.value = request.hdmi;
