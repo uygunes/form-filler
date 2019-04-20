@@ -30,6 +30,7 @@ $(function(){
 			 hdmi:fields.hdmi,
 			 dport:fields.dport,
 			 bluetooth:fields.bluetooth,
+			 cardreader:fields.cardreader,
 			 primary:fields.primary,
 			 secondary:fields.secondary,
 			 sensors:fields.sensors,
