@@ -12,6 +12,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
 		var u2  = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_usb]")[0];
 		var u3  = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_usb3]")[0];
 		var u31 = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_usb3_1]")[0];
+		var u32 = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_usb3_2]")[0];
 		var thunderbolt = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_thunderbolt]")[0];
 		var vga = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_vga]")[0];
 		var dvi = document.getElementsByName("data[tx_nbc2_nb_specs]["+id+"][port_dvi]")[0];
@@ -35,6 +36,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
 		u2.value = request.u2;
 		u3.value = request.u3;
 		u31.value = request.u31;
+		u32.value = request.u32;
 		thunderbolt.value = request.thunderbolt;
 		vga.value = request.vga;
 		dvi.value = request.dvi;
