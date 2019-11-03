@@ -24,6 +24,7 @@ $(function(){
 			 u2:fields.u2,
 			 u3:fields.u3,
 			 u31:fields.u31,
+			 u32:fields.u32,
 			 thunderbolt:fields.thunderbolt,
 			 vga:fields.vga,
 			 dvi:fields.dvi,
